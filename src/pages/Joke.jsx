@@ -9,6 +9,7 @@ const Joke = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
+    setJoke(null)
     let values = noun
     if (!values) {
       values = 'spaceship'
